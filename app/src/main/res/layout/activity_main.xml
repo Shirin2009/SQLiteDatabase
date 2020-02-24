@@ -5,6 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="42dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="MissingConstraints">
 
     <EditText
         android:id="@+id/myId"
@@ -12,34 +22,28 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
-        android:text="ID"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center_horizontal"
+        android:text="ID" />
 
     <EditText
         android:id="@+id/myName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:layout_gravity="center_horizontal"
         android:inputType="textPersonName"
         android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/myProfession"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/myId" />
+         />
 
     <EditText
         android:id="@+id/myProfession"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Profession"
-        app:layout_constraintBottom_toTopOf="@+id/mySalary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_gravity="center_horizontal"
+        />
 
     <EditText
         android:id="@+id/mySalary"
@@ -48,73 +52,53 @@
         android:ems="10"
         android:inputType="number"
         android:text="Salary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="258dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:layout_gravity="center_horizontal"/>
 
     <Button
         android:id="@+id/addbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Add"
-        app:layout_constraintEnd_toStartOf="@+id/viewbtn"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mySalary" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Add" />
 
     <Button
         android:id="@+id/viewbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="37dp"
-        android:layout_marginLeft="37dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginBottom="58dp"
+        android:layout_marginTop="10dp"
         android:text="Veiw"
-        app:layout_constraintBottom_toTopOf="@+id/deletebtn"
-        app:layout_constraintEnd_toStartOf="@+id/updatebtn"
-        app:layout_constraintStart_toEndOf="@+id/addbtn"
-        app:layout_constraintTop_toBottomOf="@+id/mySalary"
-        app:layout_constraintVertical_bias="0.633" />
+        android:layout_gravity="center_horizontal"
+        />
 
     <Button
         android:id="@+id/updatebtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_marginTop="10dp"
         android:text="Update"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mySalary" />
+        android:layout_gravity="center_horizontal"
+        />
 
     <Button
         android:id="@+id/deletebtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginBottom="140dp"
         android:text="Delete"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+         />
 
     <Button
         android:id="@+id/viewallbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="58dp"
-        android:layout_marginBottom="140dp"
+        android:layout_marginTop="10dp"
         android:text="View All"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.162"
-        app:layout_constraintStart_toEndOf="@+id/deletebtn"
-        app:layout_constraintTop_toBottomOf="@+id/viewbtn"
-        app:layout_constraintVertical_bias="1.0" />
+        android:layout_gravity="center_horizontal"
+        />
+</LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
